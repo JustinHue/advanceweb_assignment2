@@ -1,0 +1,85 @@
+       /*       
+		File Name: common.css
+                Author's Name: Justin Hellsten
+                Website Name: www.justinhellsten.com
+                File Description: This holds all the css used by all templates on the website. 
+        */
+
+
+@font-face {
+  font-family: '[set]Foundicons';
+  src: url('fonts/[set]_foundicons.eot');
+  src: url('fonts/[set]_foundicons.eot?#iefix') format('embedded-opentype'),
+       url('fonts/[set]_foundicons.woff') format('woff'),
+       url('fonts/[set]_foundicons.ttf') format('truetype'),
+       url('fonts/[set]_foundicons.svg#[set]Foundicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*="foundicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+[class*="foundicon-"]:before {
+  font-family: "[set]Foundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/*======================================================================================
+ *	Common Header CSS
+ *=====================================================================================*/
+nav.top-bar {
+	background: linear-gradient(to right, #050C0F 0%, #000000 50%, #050C0F 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    	box-shadow: 0 4px 2px -2px #808080;
+}
+nav.top-bar section li a.leftside {
+	font-family: "Ubuntu";
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+}
+nav.top-bar section li a {
+	font-family: "Ubuntu";
+	font-size: 12px;
+	letter-spacing: 0.075em;
+}
+nav.top-bar ul.title-area li.name h1 a {
+	font-family: "Ubuntu";
+	text-transform: uppercase;
+	font-size: 1.2em;
+	letter-spacing: 0.075em;
+	text-shadow: 0 0 10px #CADDD9;
+}
+nav.top-bar section li.active a {
+	border-bottom: solid 2px #031634;
+	color: #83AF9B;
+}
+nav.top-bar section li.active {
+	margin-bottom: -2px;
+}
+nav.top-bar ul.title-area li.name a img {
+	width: 122px;
+}
+
+/*======================================================================================
+ *      Common Content CSS
+ *=====================================================================================*/
+div#content {
+}
+
+/*======================================================================================
+ *      Common Footer CSS
+ *=====================================================================================*/
+div#footer {
+	padding: 25px;
+}
