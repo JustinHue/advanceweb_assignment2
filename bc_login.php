@@ -15,7 +15,7 @@
 	$username = mysqli_real_escape_string($dbc, $username);
 	$password = mysqli_real_escape_string($dbc, $password);
 	
-	$query = "SELECT * FROM members WHERE username='$username' and password='$password'";
+	$query = "SELECT * FROM admin WHERE username='$username' and password='$password'";
 	$result = mysqli_query($dbc, $query);
 	
 	// Mysql_num_row is counting table row
@@ -25,9 +25,14 @@
 		// Start session with user
 		session_start();
 		$_SESSION['username'] = $username;
-		header("Location: dashboard.php");
+		header("Location: bc_screen.php");
 	} else {
-		echo "Wrong Username or Password";
+		echo '
+  <script type="text/javascript">
+    alert("Username or password is incorrect!");
+    history.back();
+  </script>
+		';
 	}
 	
 	mysqli_close($dbc);
