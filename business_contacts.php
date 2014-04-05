@@ -33,7 +33,7 @@
 				<div class="row">
 					<div class="large-4 medium-6 small-12 columns">
 						<label>Password</label>
-						<input type="text" name="password"  />
+						<input type="password" name="password"  />
 					</div>
 				</div>
 				<input type="submit" class="button" value="Login" />

@@ -33,7 +33,7 @@
 
 	<!-- <link rel="stylesheet" href="css/app.css"> -->
 	<script src="js/vendor/modernizr.js"></script>
-
+	
 	<!-- Google Font API -->
 	<link href="http://fonts.googleapis.com/css?family=Tangerine" type="text/css" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Open Sans" type="text/css" rel="stylesheet">
@@ -47,6 +47,11 @@
 	<link href="http://fonts.googleapis.com/css?family=Old Standard TT" type="text/css" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Droid Sans" type="text/css" rel="stylesheet">
 
+	<script>
+		if (screen.width < 800) {
+			window.location.replace("mobile");
+		}
+	</script>
 </head>
 
 <body>

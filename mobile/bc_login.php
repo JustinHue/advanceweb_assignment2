@@ -26,6 +26,7 @@
 	// Mysql_num_row is counting table row
 	$count = mysqli_num_rows($result);
 	
+	
 	if($count == 1) {
 		// Start session with user
 		session_start();

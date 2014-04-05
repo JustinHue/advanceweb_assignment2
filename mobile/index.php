@@ -29,6 +29,7 @@
 	<!-- bxSlider CSS file -->
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 
+
 <script>
 $(document).ready(function(){
   $('.bxslider').bxSlider();
@@ -49,11 +50,13 @@ $(document).ready(function(){
     <ul>
       <li><a href="#home" class="ui-btn-active ui-state-persist" data-theme="c" data-icon="home">Home</a></li>
       <li><a href="#about" data-theme="c" data-icon="user">About Me</a></li>
-      <li><a href="#contact" data-theme="c" data-icon="info">Contact Me</a></li>
+      <li><a href="#contact" data-theme="c" data-icon="info">Contact Me</a></li>      
     </ul>
 	<ul>
 		<li><a href="#projects" data-theme="c" data-icon="gear">Projects</a></li>
 		<li><a href="#services" data-theme="c" data-icon="shop">Services</a></li>
+		<li><a href="#business_contacts" data-theme="c" data-icon="bullets">Business Contacts</a></li>
+		
 	</ul>
   </div>
   <section role="main" class="ui-content">
@@ -176,6 +179,42 @@ $(document).ready(function(){
   <div ><a href="https://github.com/JustinHue/Intro_to_Graphics_Project1A"><img style="width: 100%;" src="imgs/ritz_screen.png" /></a></div>
   <div><a href="https://github.com/JustinHue/Grabidelov"><img style="width: 100%;" src="imgs/grabidelov.png" /></a></div>
   <div><a href="https://github.com/JustinHue/PlutoDNASimulator"><img style="width: 100%;" src="imgs/grabidelov.png" /></a></div>
+  </div>
+  <div data-role="footer"data-theme="b"data-position="fixed">
+    <h4>Copyright 2014 by Justin Hellsten</h4>
+  </div>
+</div>
+
+<!-- Business Contacts Page Section -->
+<div data-role="page" id="business_contacts">
+  <div data-role="header"data-theme="c">
+    <h1>Business Contacts</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" data-theme="c" data-icon="home">Home</a></li>
+      <li><a href="#projects" data-theme="c" data-icon="user">Projects</a></li>
+      <li><a href="#services" data-theme="c" data-icon="info">Services</a></li>
+	  <li><a href="javascript:history.go(-1)" data-theme="c" data-icon="back">Go Back</a></li>
+    </ul>
+  </div>
+  <div data-role="content">
+			<form method="POST" action="bc_login.php">
+				<div class="row">
+					<div class="large-4 medium-6 small-12 columns">
+						<label>Username</label>
+						<input type="text" name="username" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-4 medium-6 small-12 columns">
+						<label>Password</label>
+						<input type="password" name="password"  />
+					</div>
+				</div>
+				<input type="submit" class="button" value="Login" />
+				
+			</form> 
   </div>
   <div data-role="footer"data-theme="b"data-position="fixed">
     <h4>Copyright 2014 by Justin Hellsten</h4>
