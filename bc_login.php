@@ -1,4 +1,9 @@
 <?php
+	session_start();
+	if (isset($_SESSION['username'])) {
+		die('Already logged in');
+	}
+	
 	include("includes/constants.php");
 	
 	// Connect to server and select databse.

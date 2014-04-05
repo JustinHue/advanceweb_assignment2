@@ -8,6 +8,12 @@
         */
 ?>
 
+<?php
+	session_start();
+	if (isset($_SESSION['username'])) {
+		header("Location: bc_screen.php");
+	} 
+?>
 
 <?php
         $left_index = 2;
